@@ -310,5 +310,146 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1550px) {
+  .choose-color__list {
+    flex-wrap: wrap;
+  }
+  .header__content-images img {
+    max-width: 100%;
+  }
+  .title {
+    font-size: 180px;
+    transform: translate(180px, 25px);
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 1373px) {
+  .title {
+    transform: none;
+    font-size: 140px;
+    padding-top: 20vh;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+  .title--pod {
+    /* z-index: 1; */
+  }
+  .title--s {
+    transform: none;
+  }
+  .title--m {
+    transform: none;
+  }
+  .title--ax {
+    transform: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    position: relative;
+    font-size: 100px;
+    padding-top: 0;
+  }
+
+  .title--m {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .choose-color {
+    padding-bottom: 60px;
+  }
+  .choose-color__list {
+    gap: 16px;
+  }
+  .section__title {
+    font-size: 36px;
+  }
+  .composition {
+    padding-bottom: 60px;
+  }
+  .case {
+    padding: 60px 0;
+  }
+  .energy__title {
+    margin: 60px 0 20px;
+  }
+  .energy__num {
+    margin-bottom: 20px;
+    font-size: 110px;
+  }
+  .title {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    min-height: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .choose-color__text {
+    margin-bottom: 40px;
+  }
+  .choose-color {
+    padding-bottom: 40px;
+  }
+  .case {
+    padding: 40px 0;
+  }
+  .case img {
+    max-width: 100%;
+  }
+  .composition__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .composition__inner-text {
+    max-width: 100%;
+  }
+  .menu__list {
+    flex-wrap: wrap;
+    gap: 20px 40px;
+  }
+  .menu__item--btn {
+    margin-left: auto;
+  }
+  .menu__item--btn button {
+    width: 250px;
+    padding: 15px 0px;
+  }
+  .menu__item:first-child {
+    margin-left: auto;
+  }
+  .header__top {
+    align-items: start;
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 414px) {
+  .section__title,
+  .choose-color__title {
+    font-size: 28px;
+  }
+
+  .energy__num {
+    font-size: 92px;
+  }
 }
